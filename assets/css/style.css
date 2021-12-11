@@ -22,15 +22,15 @@ header {
     max-width: 20%;
 }
 
-.nav__links {
+.navlinks {
     list-style: none;
     display: flex;
     margin-top: 20px;
 }
 
-.nav__links a,
+.navlinks a,
 .cta,
-.overlay__content a {
+.overlaycontent a {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: black;
@@ -38,22 +38,22 @@ header {
     text-transform: uppercase;
 }
 
-.nav__links li {
+.navlinks li {
     padding: 0px 20px;
 }
 
-.nav__links li a {
+.navlinks li a {
     transition: all 0.3s ease 0s;
 }
 
-.nav__links li a:hover {
+.navlinks li a:hover {
     color: #0088a9;
 }
 
 .cta {
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: #126E82;
+    background-color: #318fbb;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -64,9 +64,6 @@ header {
     background-color: #51C4D3;
 }
 
-
-/* Mobile Nav */
-
 .menu {
     display: none;
 }
@@ -75,7 +72,7 @@ header {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     left: 0;
     top: 0;
     background-color: #24252a;
@@ -87,7 +84,7 @@ header {
     width: 100%;
 }
 
-.overlay__content {
+.overlaycontent {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -116,34 +113,6 @@ header {
     cursor: pointer;
 }
 
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px;
-    }
-    .overlay .close {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .nav__links,
-    .cta {
-        display: none;
-    }
-    .menu {
-        display: initial;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .noprev {
-        display: none;
-    }
-}
-
-
 .textwhite {
     color: white;
     text-transform: uppercase;
@@ -151,20 +120,8 @@ header {
     font-size: 3vw;
 }
 
-@media only screen and (max-width: 800px) {
-    .textwhite {
-        font-size: 5vw;
-    }
-}
-
 .bg {
-    height: 400px;
-}
-
-@media only screen and (max-width: 800px) {
-    .bg {
-        height: 340px;
-    }
+    height: 450px;
 }
 
 .section-bg {
@@ -189,3 +146,116 @@ header {
     position: relative;
     z-index: 2
 }
+
+.generalh2 {
+    color: #008cff;
+    text-transform: uppercase;
+    font-size: 2vw;
+    letter-spacing: 1px;
+}
+
+.generaltext {
+    text-align: center;
+    line-height: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 3vw;
+}
+
+.mtgeneral {
+    margin-top: 350px;
+}
+
+@media only screen and (max-width: 800px) {
+    .generalh2 {
+        font-size: 7vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .mtgeneral {
+        margin-top: 150px;
+    }
+}
+
+.mtsocial {
+    margin-top: 235px;
+}
+
+@media only screen and (max-width: 800px) {
+    .mtsocial {
+        margin-top: 100px;
+    }
+}
+
+.mtgym {
+    margin-top: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+    .mtgym {
+        margin-top: 50px;
+    }
+}
+
+.restaurant {
+    margin-top: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+    .restaurant {
+        margin-top: 50px;
+    }
+}
+
+.psychotherapy {
+    margin-top: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+    .psychotherapy {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .bg {
+        height: 340px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .textwhite {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .navlinks,
+    .cta {
+        display: none;
+    }
+    .menu {
+        margin-top: 20px;
+        display: initial;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .noprev {
+        display: none;
+    }
+}
+
+

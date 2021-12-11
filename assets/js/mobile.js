@@ -2,10 +2,10 @@ const doc = document;
 const menuOpen = doc.querySelector(".menu");
 const menuClose = doc.querySelector(".close");
 const menuCloseGen = doc.querySelector(".closegen");
-const menuCloseSim = doc.querySelector(".closesim");
-const menuCloseRisk = doc.querySelector(".closerisk");
-const menuCloseMit = doc.querySelector(".closemit");
-const menuClosePrev = doc.querySelector(".closeprev");
+const menuCloseSm = doc.querySelector(".closesm");
+const menuCloseRisk = doc.querySelector(".closegym");
+const menuCloseMit = doc.querySelector(".closerestaurant");
+const menuClosePrev = doc.querySelector(".closepsycho");
 const overlay = doc.querySelector(".overlay");
 
 menuOpen.addEventListener("click", () => {
@@ -20,7 +20,7 @@ menuCloseGen.addEventListener("click", () => {
   overlay.classList.remove("overlay--active");
 });
 
-menuCloseSim.addEventListener("click", () => {
+menuCloseSm.addEventListener("click", () => {
   overlay.classList.remove("overlay--active");
 });
 
